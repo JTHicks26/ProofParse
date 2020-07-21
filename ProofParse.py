@@ -26,10 +26,11 @@ def ParseLink():
 				newLink = newLink.replace(item[1],item[0])
 		
 		print(newLink)
-		
-		if newLink.find("?") != -1:
-			newLink = newLink[:newLink.find("?")]
-			print(newLink)
+
+		#  Remove all arguments from URL
+		#if newLink.find("?") != -1:
+		#	newLink = newLink[:newLink.find("?")]
+		#	print(newLink)
 		
 		try:
 			pyperclip.copy(newLink)
